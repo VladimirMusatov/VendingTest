@@ -14,9 +14,12 @@ use App\Http\Controllers\MainController;
 |
 */
 
+//Главная страница
 Route::get('/',[MainController::class,'index'])->name('index');
 
+//Форма для ввода купюры
 Route::get('/form',[MainController::class,'form'])->name('form');
+//Сохранение денег
 Route::get('/store',[MainController::class,'store'])->name('store');
 
 //Сдача
